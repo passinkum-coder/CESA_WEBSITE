@@ -55,4 +55,75 @@ h2 { color:#005d99; margin-bottom:1rem; text-align:center; }
   border:none;
   padding:1rem 2rem;
   font-size:1rem;
-  border-radius:6
+  border-radius:6px;
+  cursor:pointer;
+  transition: background 0.3s;
+  margin:0.5rem;
+}
+.cta button:hover { background:#004b7a; }
+
+@media(max-width:768px) { .grid { flex-direction:column; align-items:center; } }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Construction Executive Systems Advisors (CESA)</h1>
+  <p>Executive construction leadership for owners and firms scaling from $10M to $50M+. Run construction like a business — not a guess.</p>
+</header>
+
+<div class="container">
+
+  <section>
+    <h2>The Problem</h2>
+    <p>Most construction companies fail not from effort or opportunity, but from escalated problems, unquantified cost impact, and lost executive visibility.</p>
+    <p>Growth doesn’t create chaos. Unstructured decision-making does.</p>
+  </section>
+
+  <section>
+    <h2>The Solution: The Bridge Method™</h2>
+    <div class="grid">
+      <div class="grid-item" onclick="toggleExpand(this)">
+        <h3>Field Reality</h3>
+        <p>How work is actually built — not how it looks on paper.</p>
+        <div class="expanded">
+          <p>Superintendents and field leaders focus on sequencing, constructability, coordination, and real site conditions. Their decisions ensure accurate translation into cost, schedule, and risk assessments.</p>
+        </div>
+      </div>
+
+      <div class="grid-item" onclick="toggleExpand(this)">
+        <h3>Financial Truth</h3>
+        <p>Translate site conditions into real cost and schedule impact.</p>
+        <div class="expanded">
+          <p>Project Managers analyze field realities, forecast costs, schedule impact, and potential change orders. This ensures accurate margin protection and reduces surprises.</p>
+        </div>
+      </div>
+
+      <div class="grid-item" onclick="toggleExpand(this)">
+        <h3>Executive Judgment</h3>
+        <p>Decide when to solve internally, when to escalate, and protect margin.</p>
+        <div class="expanded">
+          <p>Owners and Directors determine strategic actions, balancing client relationships with profitability. This ensures high-level decisions are informed by accurate field and financial information.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Judgment Over Jargon — Owner’s Playbook</h2>
+    <button>Purchase Playbook</button>
+    <h2>Executive Advisory</h2>
+    <button>Apply for Advisory</button>
+  </section>
+
+</div>
+
+<script>
+function toggleExpand(card){
+  const content = card.querySelector('.expanded');
+  content.classList.toggle('show');
+}
+</script>
+
+</body>
+</html>
