@@ -2,12 +2,19 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Construction Executive Systems Advisors (CESA) | Executive Construction Leadership</title>
+<title>Test Card</title>
 <style>
-body { font-family: Arial, sans-serif; margin:0; padding:0; color:#1b1b1b; background:#f7f7f7; }
-header { background:#333; color:white; padding:2rem; text-align:center; }
-header h1 { margin:0; font-size:2.2rem; }
-header p { margin:0.5rem 0 0; font-size:1rem; }
-
-.container { padding:2rem; max-width
+.grid-item { background:#fff; padding:20px; width:300px; margin:20px; border-radius:10px; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+.expanded { max-height:0; overflow:hidden; transition:max-height 0.5s ease; }
+.expanded.show { max-height:200px; }
+</style>
+</head>
+<body>
+<div class="grid-item" onclick="this.querySelector('.expanded').classList.toggle('show')">
+  <h3>Field Reality</h3>
+  <div class="expanded">
+    <p>Expanded explanation inside the card.</p>
+  </div>
+</div>
+</body>
+</html>
